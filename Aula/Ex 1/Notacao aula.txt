@@ -1,0 +1,29 @@
+viewport = responsividade (área útil do dispositivo)
+
+b == Strong são negritos, mas Strong é semântico
+
+
+i == em são itálico, mas itálico i é para palavras estrangeiras
+
+blockquote = usada para citação
+
+li*n (n vai criar vários li)
+
+figure faz mesma coisa que a img, mas tem mais recursos
+	figcaption = legenda
+
+Ctrl + :
+	Comenta
+
+caption = cabeçalho geral de table
+
+&nbsp = 1 espaço
+
+&ensp = 2 espaços
+
+&emsp = 3 espaços
+
+
+
+&copy = todos direitos reservados
+
