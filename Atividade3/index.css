@@ -1,0 +1,89 @@
+body{
+    font-size: 1rem;
+    font-family: Tahoma, sans-serif;
+    font-weight: 100;
+    line-height: 2;
+    padding: 0 1rem;
+    background-color: #4b5358;
+    color: white;
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.img {
+    width: 80%;
+    height: 80%;
+    display: table;
+    margin: 0 auto;
+}
+
+.img_aside{
+    width: 100%;
+}
+
+a
+{
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+
+figure figcaption {
+    text-align: center;
+}
+
+.container
+{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 0.6rem;
+    padding-right: 0.8rem;
+}
+
+.exemplos{
+    padding-right: 1rem;
+    font-size: 0.8rem;
+    line-height: 2rem;
+    gap: 5rem;
+}
+
+.cont
+{
+    text-align: justify;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1,h2
+{
+    text-decoration: underline;
+}
+
+h3
+{
+    text-align: right;
+    padding-right: 1.1rem;
+}
+
+p, blockquote, .resto  
+{
+    text-indent: 10px;
+    line-height: 3rem;
+}
+
+footer {
+    background-color: #235556;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}

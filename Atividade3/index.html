@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet of Things</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="assets/icon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <nav class="navbar"><a href="#def">Introdução</a><a href="#cont">Conteudo</a><a href="#rodape">Contato</a></nav>
+    <hr>
+    <div><img class="img" src="./assets/wallpaper.jpg" alt=""></div>
+    <header id="def">
+        <section>
+            <h1>Internet das Coisas</h1>
+            <blockquote>Internet das Coisas diz respeito aos dispositivos com tecnologia embarcada,
+                que agregam inteligência a sua versão consolidada, nos quais se realiza: automações
+                de tarefas, obtenção de dados remota e integração entre dispositivos.
+                Tudo para auxiliar na resolução de problemas, ou ainda, aprimorar a qualidade
+                de vida (IBM, 2024).</blockquote>
+        </section>
+    </header>
+    <div class="container">
+        <aside class="exemplos">
+            <!--procurar o que por no aside-->
+            <div>
+                <h3>Exemplos</h3>
+                <ul>
+                    <strong>Eletrodomésticos</strong>
+                    <li>Fogão</li>
+                    <li>Ar Condicionado</li>
+                    <li>Chuveiro</li>
+                </ul>
+                <ul>
+                    <strong>Veículos</strong>
+                    <li>Carro</li>
+                    <li>Drone</li>
+                    <li>Metrô</li>
+                </ul>
+                <ul>
+                    <strong>Wearables</strong>
+                    <li>Relógio</li>
+                    <li>Roupa</li>
+                    <li>Óculos</li>
+                </ul>
+            </div>
+
+            <div>
+                <img class="img_aside" src="./assets/img_iot.png" alt="">
+            </div>
+
+        </aside>
+        <main>
+            <article id="cont">
+                <section>
+                    <h2>Protocolos</h2>
+
+                    <div>
+                        <p>
+                            Os protocolos são usados como meio de campo da IoT, têm-se então diferentes propósitos de
+                            acordo com os recursos disponíveis como também qual o cenário do problema. Essa comunicação
+                            geralmente ocorre por meio de componentes bem consolidados para estes fins, que são os sensores e
+                            atuadores (parte que detecta variações e outra que realiza intervenções, respectivamente), e a rede,
+                            composta de um conjunto de dispositivos e sistemas (ALCTEL, 2023).
+                        </p>
+                    </div>
+
+                    <div>
+                        <p> Alguns fatores limitantes quanto a escolha do protocolo adequado de acordo com o projeto,
+                            reside em parâmetros como: Gasto Energético, Frequência de Trabalho, Distância entre Dispositivos,
+                            e o nível de Segurança de Transmissão destes dados. Dentre os protocolos para transmissão de
+                            dados,há alguns já conhecidos por serem amplamente utilizados por computadores e smartphones, como
+                            por exemplo:</p>
+                    </div>
+
+                </section>
+            </article>
+        </main>
+    </div>
+    <div>
+        <article class="resto">
+            <section>
+                <ul>
+                    <li><strong>HTTP</strong>: Pode causar sobrecarga de envio de dados, e consumo prematuro de
+                        banda limitada, devido se tratar de um conjunto mais rico de informações.</li>
+                    <li><strong>Wi-Fi</strong>: Grandes taxas de transmissão (até escala de Gigabit/segundo), mas
+                        acaba tendo alto consumo de energia.</li>
+                    <li><strong>Bluetooth</strong>: Tem grande alcance (escala de até centena de metros), e tem
+                        baixo consumo de energia.</li>
+                    <li><strong>MQTT</strong>: Indicado para redes com variações de instabilidade maiores, e
+                        embasado no conceito publisher-subscriber, de quais equipamentos inscritos recebem os dados
+                        de uma fonte.</li>
+                    <li><strong>CoAP</strong>: Depende de redes mais consolidades para que confiram estabilidade
+                        para ser usado, tem embasamento em conceitos API REST e o protocolo HTTP.</li>
+                    <li><strong>AMQP</strong>: Com ênfase em segurança, este protocolo realiza o gerenciamento e
+                        armazenamento dos dados coletados, sendo de maior robusteza devido implementar abordagens
+                        mais seguras.</li>
+                </ul>
+                <section>
+                    <h2>Aplicações</h2>
+                    <p>Com a miniaturização do hardware e a componentização genérica de circuito
+                        eletrônico, para fins de conferir inteligência aos dispositivos, como por exemplo:</p>
+                    <figure>
+                        <img class="img" src="./assets/iot_use.png" title="IoT" alt="IoT Aplicação">
+                        <figcaption><small>Figura 2: Abrangencia do IoT</small>
+                        </figcaption>
+                    </figure>
+                </section>
+            </section>
+        </article>
+    </div>
+    <hr>
+    <footer id="rodape">
+        <div>
+            <p>Av. Eng. Carlos Reinaldo Mendes, 2015 - Além Ponte, Sorocaba - SP, 18013-280</p>
+            <p>(15) 3238-5266</p>
+        </div>
+        <div>
+            <p>&copy;Alessandro. Todos Direitos reservados</p>
+        </div>
+    </footer>
+</body>
+
+</html>
