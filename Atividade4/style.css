@@ -2,6 +2,8 @@
 {
     margin: 0;
     padding: 0;
+	max-width: 100%;
+    overflow-x: hidden;
 }
 
 html
@@ -10,12 +12,13 @@ html
     color: white;
     text-align: center;
     background-color: #d8bb8c;
+	padding: 0.5rem;
 }
 
 .logo {
     width: 4rem;
     height: 4rem;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     top: 0;
     left: 0;
 }
@@ -27,18 +30,13 @@ header
     flex-wrap: wrap;
 }
 
-body
-{
-    gap: 0;
-}
-
 .banner
 {
     width: 90%;
     height: 90%;
     object-fit: cover;
     object-position: bottom;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     border-radius: 5px;
 }
 
@@ -48,6 +46,7 @@ a
     color: #080808;
     cursor: pointer;
 }
+
 
 .container, .ad
 {
@@ -59,14 +58,10 @@ a
     .column {
       width: 50%;
     }
-    .container, .ad
+    .container, .ad, footer
     {
         flex-wrap: wrap;
         justify-content: center;
-    }
-    aside
-    {
-        width: 200%;
     }
 
   }
@@ -78,20 +73,32 @@ a
     gap: 2rem;
     justify-content: center;
     margin-bottom: 3rem;
+	padding: min(15px, 7%);
 }
 
 .ad 
 {
-    padding: 1rem 0.5rem;
+	justify-content: center;
+	align-content: center;
+	width:100%;
+	object-fit: cover;
+    object-position: bottom;
+}
+
+.divulgacao
+{
+	padding: 0.5rem;
+	align-content: center;
+	text-align; center:
 }
 
 h1, h2
 {
     margin: 30px 0;
     text-align: center;
-    -webkit-text-stroke-width: .3px;
-    -webkit-text-stroke-color: black;
+	color: #080808;
     margin: 2.8rem 0;
+	text-decoration: underline;
 }
 
 .card
@@ -129,10 +136,15 @@ aside p
     text-align: center;
 }
 
+.img-ad
+{
+	width: 100%;
+}
+
 .img-aside
 {
-    width: 10rem;
-    height: 10rem;
+    width: 5rem;
+    height: 5rem;
     padding-top: 4rem;
     margin-bottom: 2rem;
 }
@@ -140,7 +152,6 @@ aside p
 figcaption
 {
     color: #080808;
-
 }
 
 
@@ -159,12 +170,13 @@ em {
 
 blockquote
 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 700;
-    line-height: 4;
+    line-height: 3;
     text-align: justify;
     padding: 1rem;
     color: #080808;
+	text-indent: 10px;
 }
 
 .places
@@ -172,7 +184,8 @@ blockquote
     text-align: center;
     justify-content: center;
     list-style-type: none;
-    line-height: 5;
+    line-height: 3;
+	color: brown;
 }
 
 .emergency
@@ -196,7 +209,7 @@ button
     border-radius: 5px;
     padding: 2rem;
     cursor: pointer;
-    font-size: 2em;
+    font-size: 1.8em;
     border: none;
 }
 
