@@ -1,0 +1,223 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    background-color: #d8bb8c;
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+    padding: 2rem 0;
+    top: 0;
+    left: 0;
+}
+
+header
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+body
+{
+    gap: 0;
+}
+
+.banner
+{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    object-position: bottom;
+    margin-bottom: 4rem;
+    border-radius: 5px;
+}
+
+a
+{
+    text-decoration: none;
+    color: #080808;
+    cursor: pointer;
+}
+
+.container, .ad
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+@media screen and (max-width: 850px) {
+    .column {
+      width: 50%;
+    }
+    .container, .ad
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    aside
+    {
+        width: 200%;
+    }
+
+  }
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.ad 
+{
+    padding: 1rem 0.5rem;
+}
+
+h1, h2
+{
+    margin: 30px 0;
+    text-align: center;
+    -webkit-text-stroke-width: .3px;
+    -webkit-text-stroke-color: black;
+    margin: 2.8rem 0;
+}
+
+.card
+{
+    padding: 1.2em;
+    border: 1px solid rgb(75, 82, 92);
+    border-radius: 10px;
+    background-color: #222429;
+    /*margin: 1em; gap no grid principal deu espaço entre os cards*/
+    text-align: justify;
+    line-height: 2;
+    
+}
+
+.card p
+{
+    text-indent: 10px;
+}
+
+.img-card
+{
+    width: 100%;
+    border-radius: 5px;
+}
+
+aside
+{
+    top: 0;
+    margin-bottom: 3rem;
+}
+
+aside p 
+{
+    color: #080808;
+    text-align: center;
+}
+
+.img-aside
+{
+    width: 10rem;
+    height: 10rem;
+    padding-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+figcaption
+{
+    color: #080808;
+
+}
+
+
+.ad section p 
+{
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(218, 19, 19);
+}
+
+em {
+    font-style: normal;
+    text-decoration: underline;
+}
+
+blockquote
+{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 4;
+    text-align: justify;
+    padding: 1rem;
+    color: #080808;
+}
+
+.places
+{
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+    line-height: 5;
+}
+
+.emergency
+{
+    margin-top: 1rem;
+    background-color: red;
+}
+
+.emergency p
+{
+    font-weight: 900;
+    font-size: 6rem;
+}
+
+button
+{
+    width: 50%;
+    margin: 1.5rem 0;
+    transition-duration: 0.4s;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2rem;
+    cursor: pointer;
+    font-size: 2em;
+    border: none;
+}
+
+button:hover 
+{
+    background-color: #080808;
+    color: white;
+}
+
+.term
+{
+    margin: 2rem 0;
+}
+
+
+footer {
+    background-color: #080808;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10rem 0;
+    margin-top: 1rem;
+}
