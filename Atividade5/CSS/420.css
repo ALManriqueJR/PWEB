@@ -1,0 +1,21 @@
+.container
+{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    height: 500px;
+}
+
+
+@media screen and (max-width: 420px) 
+{
+    .container{
+        background-color: darkgray;
+    }
+
+    h2::after{
+        content: "Cinza";
+        color: black;
+    }
+}

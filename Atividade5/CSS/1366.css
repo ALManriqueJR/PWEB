@@ -1,0 +1,21 @@
+.container
+{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    height: 500px;
+}
+
+
+@media screen and (max-width: 1366px) 
+{
+    .container{
+        background-color: blue;
+    }
+
+    h2::after{
+        content: "Azul";
+        color: black;
+    }
+}
