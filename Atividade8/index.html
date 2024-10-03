@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cineminha</title>
+    <script src="./index.js" type="module"></script>
+</head>
+<body>
+    <main id="root">
+        <form id="formulario">
+            <label>Idade: <input type="text" id="idade" placeholder="Ex. 18"></label>
+            
+            <br><br>
+            
+            <input type="radio" name="Sexo" value="M" checked>
+            <label for="masculino">Masculino</label>
+            
+            <br>
+            
+            <input type="radio" name="Sexo" value="F">
+            <label for="feminino">Feminino</label>
+            
+            <br><br>
+
+            <select id="voto">
+                <option value="0">Selecione sua opção</option>
+                <option value="1">péssimo</option>
+                <option value="2">regular</option>
+                <option value="3">bom</option>
+                <option value="4">ótimo</option>
+            </select>
+
+            <br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <section>
+            <h1>Resultados: </h1>
+            <p id="mediaBoard"></p>
+            <br>
+            <p id="oldestBoard"></p>
+            <br>
+            <p id="newestBoard"></p>
+            <br>
+            <p id="worstReviewCounter"></p>
+            <br>
+            <p id="percentGoodNGreat"></p>
+            <br>
+            <p id="menAndWomen"></p>
+            <br>
+        </section>
+        
+    </main>
+</body>
+</html>
