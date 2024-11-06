@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form in HTML and CSS | Codehal</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/styleLogin.css">
+    <script src="./controller/login.js" type="module"></script>
+</head>
+
+<body>
+    
+    <main id="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <section class="input-box">
+                <input type="text" placeholder="Usuário" id="usuario" required>
+                <i class='bx bxs-user'></i>
+            </section>
+            <section class="input-box">
+                <input type="password" placeholder="Senha" id="senha" required>
+                <i class='bx bxs-lock-alt' ></i>
+            </section>
+            <section class="senha_esqueceu">
+               <p><a id="esqueci">Esqueci a senha</a>🤦‍♂️</p>
+            </section>
+
+            <button type="submit" class="btn">Entrar</button>
+
+        </form>
+    </main>
+
+</body>
+
+</html>

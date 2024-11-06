@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+
+</head>
+
+<body>
+
+    <section id="description">
+        <img class="icon-fixo" id="nuvem" src="./assets/nuvem.png">
+        <input type="text" id="assunto" placeholder="[Assunto]"></input>
+        <br><br>
+        <input type="text" id="missao" placeholder="[Missão]"></input>
+        <br><br>
+        <input type="text" id="meta" placeholder="[Meta]"></input>
+        <br><br>
+
+    </section>
+
+    <article class="grid-container" id="grid">
+
+        <section class="column" id="todo">
+            <h3 class="card-title">A fazer</h3>
+            <a href="#" class="openModal" name="todo-list">+ Add Item</a>
+            <br><br>
+            <div id="todo-resp" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+            </div>
+
+        </section>
+
+        <section class="column" id="andamento">
+            <h3 class="card-title">Em Andamento</h3>
+            <a href="#" class="openModal" name="andamento-list">+ Add Item</a>
+            <br><br>
+            <div id="andamento-resp" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+            </div>
+
+        </section>
+
+        <section class="column" id="done">
+            <h3 class="card-title">Concluída</h3>
+            <a href="#" name="done-list">+ Add Item</a>
+            <br><br>
+            <div id="done-resp" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+            </div>
+
+        </section>
+
+    </article>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+
+            <form id="card">
+                <span id="closeModal" class="close">&times;</span>
+                <label>Titulo: <input type="text" id="cardTitle" style="width: 200px; border: 1px solid #222429;"></label>
+                <br><br>
+                <select name="prioridade" id="opt">
+                    <option value="0">Prioridade:</option>
+                    <option value="1">Baixa</option>
+                    <option value="2">Media</option>
+                    <option value="3">Alta</option>
+                </select>
+                <input type="date" id="data">
+                <br><br>
+                <label for="cardDescription">Descrição:<br><textarea id="cardDescription"></textarea></label>
+                <br>
+                <button type="submit" id="botao">Adicionar</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="contextMenu" class="context-menu">
+        <button id="editOption">Editar</button>
+        <button id="deleteOption">Excluir</button>
+    </div>
+
+
+    <footer class="container-fluid">
+        <div class="row justify-content-center align-items-center py-3">
+            <div class="col-md-4 text-center text-md-left mb-3 mb-md-0">
+                <br><br>
+                <a href="https://pt.wikipedia.org/wiki/Kanban" target="_blank">O que é Kanban?</a>
+                <br><br>
+                <a href="https://lean-kanban.myshopify.com/checkouts/co/52fc802ce32568eeefb180fb306b7dd6"
+                    target="_blank">Como usar?</a>
+            </div>
+
+            <div class="col-md-4 text-center text-md-left mb-3 mb-md-0">
+                <u style="color: white;">Gerencie seu Tempo</u>
+                <br><br>
+                <a href="https://pt.wikipedia.org/wiki/T%C3%A9cnica_pomodoro" target="_blank">Pomodoro</a>
+                <br><br>
+                <a href="https://en.wikipedia.org/wiki/Timeboxing" target="_blank">Timeboxing</a>
+            </div>
+
+            <div class="col-md-4 text-center text-md-right">
+                <br><br>
+                <a target="_blank" href="https://github.com/ALManriqueJR">𝒜𝓁ManriqueJr</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="index.js" type="module"></script>
+
+    <script>
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        function drag(event) {
+            event.dataTransfer.setData("text", event.target.id);
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            const data = event.dataTransfer.getData("text");
+            const task = document.getElementById(data);
+            event.target.appendChild(task);
+        }
+    </script>
+
+
+</body>
+
+</html>

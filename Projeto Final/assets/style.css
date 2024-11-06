@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #638DCD;
+}
+
+body,
+footer {
+    background-color: #638DCD;
+}
+
+.icon-fixo {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .icon-fixo:hover {
+    transform: scale(1.1);
+  }
+
+
+footer a {
+    color: #ffffffb3;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1070px) {
+    body {
+        max-width: 375px;
+        min-width: 375px;
+    }
+
+    html {
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    footer {
+        width: 1000%;
+    }
+
+
+}
+
+::placeholder {
+    color: rgb(255, 255, 255);
+  }
+
+#description {
+    text-align: justify;
+    background-color: #638DCD;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+#description input{
+    border: none;
+    background-color: #638DCD;
+    line-height: 40px;
+    width: 375px;
+}
+
+#assunto{
+    text-transform:uppercase;
+    font-weight: 800;
+}
+
+#missao{
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    padding: min(15px, 7%);
+    background-color: #638DCD;
+}
+
+.column {
+    padding: 1.2em;
+    border: none;
+    border-radius: 10px;
+    background-color: #222429;
+    /*margin: 1em; gap no grid principal deu espaço entre os cards*/
+    text-align: center;
+    min-height: 200 px;
+}
+
+#todo-resp, #done-resp, #andamento-resp {
+    width: 100%;
+    min-height: 100px;
+    background-color: grey;
+    padding: 3px;
+}
+
+
+.card {
+    border: 1px solid white;
+    outline: none;
+    text-align: justify;
+    margin: 0.5rem 0 0.5rem 0;
+    overflow: hidden;
+    cursor: grab;
+    position: relative;
+}
+
+
+div.edit {
+    background-color: #595c60;
+}
+
+.card-body {
+    padding: 5%;
+}
+
+.card-title {
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+}
+
+
+footer {
+    background-color: #222429;
+    width: 100%;
+    min-height: 280px;
+    margin-top: 30px;
+    padding: 1.2rem;
+}
+
+section h1,
+section h2,
+section h3 {
+    overflow: hidden;
+}
+
+
+
+
+.ribbon {
+    position: absolute;
+    top: 4px;
+    right: -25px;
+    padding: 2px 30px;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    transform: rotate(45deg);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.508);
+}
+
+.ribbon-baixa {
+    background-color: #28a745;
+}
+
+.ribbon-alta {
+    background-color: #dc3545;
+}
+
+.ribbon-mediana {
+    background-color: #ffc107;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#opt,
+#data {
+    border: 1px solid #222429;
+}
+
+#cardDescription {
+    min-width: 250px;
+    min-height: 200px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+#botao {
+    background-color: #222429;
+    border-radius: 8px;
+    border-width: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    margin: 0;
+    padding: 12px 16px;
+    text-align: center;
+}
+
+.context-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    z-index: 1000;
+    padding: 8px 0;
+    width: 120px;
+}
+
+.context-menu button {
+    background: none;
+    border: none;
+    width: 100%;
+    padding: 8px 12px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.context-menu button:hover {
+    background-color: #f1f1f1;
+}
